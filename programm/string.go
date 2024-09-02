@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func TestString() {
+func testString() {
 	/*
 		// пустая строка
 		var str string
