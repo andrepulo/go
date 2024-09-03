@@ -12,6 +12,7 @@ func testVvod() {
 	testVvod3()
 	testVvod4()
 	testVvod5()
+	testVvod6()
 }
 
 /*
@@ -82,7 +83,6 @@ func testVvod3() {
 Формат выходных данных
 Программа должна вывести введенные строки в обратной последовательности, каждую на отдельной строке.
 */
-
 func testVvod4() {
 	scanner := bufio.NewScanner(os.Stdin)
 	_ = scanner.Scan()
@@ -105,7 +105,6 @@ func testVvod4() {
 Формат выходных данных
 Программа должна вывести введённые три строки через разделитель.
 */
-
 func testVvod5() {
 	scanner := bufio.NewScanner(os.Stdin)
 	_ = scanner.Scan()
@@ -117,4 +116,16 @@ func testVvod5() {
 	_ = scanner.Scan()
 	name3 := scanner.Text()
 	fmt.Println(name1 + name + name2 + name + name3)
+}
+
+/*
+Напишите программу, которая последовательно делает следующие операции с введённым числом:
+Число умножается на 2;
+Затем к числу прибавляется 100.
+*/
+func testVvod6() {
+	var a int
+	fmt.Scan(&a)
+	c := a*2 + 100
+	fmt.Println(c)
 }
